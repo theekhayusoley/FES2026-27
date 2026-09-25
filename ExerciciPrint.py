@@ -3,7 +3,7 @@
 # Completa els exercicis següents utilitzant la funció print()
 ###
 
-# Exercici 1
+# Exercici 01
 # Imprimeix el teu nom i cognom a la consola
 print("Em dic Theekhayu Soley Srisawat")
 
