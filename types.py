@@ -9,7 +9,7 @@ print(type(25))
 
 # Exercici 2
 # Imprimeix el tipus del text "Hola món"
-print(type("Hola món"))
+print(type("Hola món")) #qualsevol cosa a dins de cometes es reconeguda com a str
 
 # Exercici 3
 # Imprimeix el tipus del resultat de la comparació 10 > 5
