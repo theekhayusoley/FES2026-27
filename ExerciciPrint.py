@@ -11,7 +11,7 @@ print("Em dic Theekhayu Soley Srisawat")
 # Exercici 2
 # Imprimeix les paraules "Python", "és", "divertit" separades per un guió (-)
 # Pista: utilitza el paràmetre 'sep' de print()
-print("python - es - divertit")
+print("Python", "és", "divertit", sep="-")
 
 # Exercici 3
 # Imprimeix el resultat de la suma 15 + 27
