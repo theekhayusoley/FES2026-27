@@ -17,7 +17,7 @@ lista_vacia = []
 lista_de_listas = [[1, 2], ['calcetin', 4]]
 #       1   [0][0]    2 [0][1]
 # 'calcetin'[1][0]    4 [1][1]
-# print(lista_de_listas[1][0]) # calcetin
+print(lista_de_listas[1][0]) # calcetin ---> Primer va la fila [1] y depres la columna [0]
 matrix = [[1, 2], [2, 3], [4, 5]]
 
 # print(lista1)
@@ -35,7 +35,7 @@ print(lista2[1])  # peras
 print(lista2[-1]) # fresas
 print(lista2[-2]) # plátanos
 
-# print(lista_de_listas[1][0])
+# print(lista_de_listas[1][0]) #Primer va la fila [1] y depres la columna [0]
 
 # Slicing (rebanado) de listas
 lista1 = [1, 2, 3, 4, 5]
