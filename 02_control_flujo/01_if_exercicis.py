@@ -8,7 +8,15 @@
 # - Entre -67 dBm i menys de -50 dBm: bona
 # - Entre -75 dBm i menys de -67 dBm: feble
 # - Inferior a -75 dBm: molt feble
-
+dbm = int(input("Introdueix els dBm de la senyal rebuda: "))
+if dbm>-50:
+    print("Cobertura excel·lent")
+elif dbm>=-67 and dbm<=-50:
+    print("Cobertura bona")
+elif dbm>=-75 and dbm<-67:
+    print("Cobertura feble")
+elif dbm<-75:
+    print("Cobertura molt feble")
 # Exercici 2: Nivell de recepció d'una connexió de fibra òptica
 # Demana la potència òptica rebuda en dBm. Per a aquest exercici, considera
 # acceptable un nivell entre -27 dBm i -8 dBm, ambdós inclosos.
