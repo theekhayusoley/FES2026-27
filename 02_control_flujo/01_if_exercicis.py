@@ -15,17 +15,33 @@ elif dbm>=-67 and dbm<=-50:
     print("Cobertura bona")
 elif dbm>=-75 and dbm<-67:
     print("Cobertura feble")
-elif dbm<-75:
+else:
     print("Cobertura molt feble")
+
 # Exercici 2: Nivell de recepció d'una connexió de fibra òptica
 # Demana la potència òptica rebuda en dBm. Per a aquest exercici, considera
 # acceptable un nivell entre -27 dBm i -8 dBm, ambdós inclosos.
 # Indica si el nivell és massa baix, acceptable o massa alt.
+dBm = int(input("Introdueix el la potència óptica de la senyal "))
+if dBm>=-27 and dBm<=-8:
+    print("Senyal acceptable")
+elif dBm>-8:
+    print("Senyal massa alta")
+else:
+    print("senyal massa baixa")
 
 # Exercici 3: Consum mensual de dades mòbils
 # Demana el consum de dades en GB d'una línia mòbil. El pla inclou 20 GB.
 # Indica si el consum és dins del límit o si l'ha superat; en aquest últim cas,
 # calcula quants GB addicionals s'han consumit.
+
+consum = int(input("Introdueix el consum de dades en GB: "))
+if consum > 20:
+    print("Has superat el plà màxim :(")
+    exces = consum - 20
+    print(f"T'has pasat {exces} GB tt ")
+else:
+    print("De moment estas dintre")
 
 # Exercici 4: Diagnòstic d'una connexió de fibra
 # Demana si l'indicador LOS del terminal òptic està encès i si l'indicador
