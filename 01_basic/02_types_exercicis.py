@@ -1,4 +1,4 @@
-###
+##
 # Exercicis - types()
 # Completa els exercicis següents utilitzant la funció type()
 ###
