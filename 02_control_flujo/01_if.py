@@ -46,6 +46,7 @@ nota = 7
 # Además de usar "if" y "else", podemos usar "elif" para determinar
 # múltiples condiciones, ten en cuenta que sólo se ejecutará el primer bloque
 # de código que cumpla la condición (o la del else, si está presente)
+'''
 if nota >= 9:
   print("¡Sobresaliente!")
 elif nota >= 7:
@@ -54,7 +55,7 @@ elif nota >= 5:
   print("¡Aprobado!")
 else:
   print("¡No está calificado!")
-
+'''
 # print("\n Condiciones múltiples")
 # edad = 16
 # tiene_carnet = True
