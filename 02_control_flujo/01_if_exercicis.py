@@ -191,7 +191,7 @@ else:
 # alternativa, o si afecta almenys 50 usuaris i no hi ha alternativa; alta si
 # afecta almenys 10 usuaris o un servei crític; en qualsevol altre cas, baixa.
 
-servei_critic = input("La incidència afecta un servei crític? (sí/no): "0).lower()
+servei_critic = input("La incidència afecta un servei crític? (sí/no): ").lower()
 
 usuaris = int(input("Quants usuaris estan afectats? "))
 
