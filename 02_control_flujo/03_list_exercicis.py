@@ -66,3 +66,9 @@ central = llista[2:3]
 # Donada una llista, inverteix-ne només la primera meitat (fent servir slicing
 # i concatenació).
 # Exemple: llista = [1, 2, 3, 4, 5, 6] -> Resultat: [3, 2, 1, 4, 5, 6]
+lista = [1, 2, 3, 4, 5, 6]
+
+mitad = len(lista) // 2
+resultado = lista[:mitad][::-1] + lista[mitad:]
+
+print(resultado)  # [3, 2, 1, 4, 5, 6]

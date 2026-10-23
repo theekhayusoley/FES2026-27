@@ -65,7 +65,7 @@ compte_bloquejat = False
 # Mostra'n el resultat.
 
 if compte_actiu == True and contrasenya_correcta == True and compte_bloquejat == False:
-    if codi_correcte == True or dispositiu_de_confianca == True:
+    if codi_correcte == True or dispositiu_de_confiança == True:
         acces_permes = True
     else:
         acces_permes = False
