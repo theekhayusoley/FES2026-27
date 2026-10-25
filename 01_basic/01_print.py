@@ -29,10 +29,10 @@ print(42)
 # print("Això és una "polzada"")  # ❌ Això generaria un error de sintaxi
 
 # # ✅ Solució 1: Utilitzar cometes simples per delimitar la cadena
-# print('Això és una "polzada" dins d'una cadena amb cometes simples')
+print('Això és una "polzada" dins d'una cadena amb cometes simples')
 
 # # ✅ Solució 2: Utilitzar el caràcter d'escapament \ per incloure cometes dobles dins d'una cadena amb cometes dobles
-# print("Això és una \"polzada\" dins d'una cadena amb cometes dobles")
+print("Això és una \"polzada\" dins d'una cadena amb cometes dobles")
 
 # # ✅ Solució 3: Utilitzar cometes triples per definir la cadena
 # print("""Això és una "polzada" dins d'una cadena amb cometes triples""")

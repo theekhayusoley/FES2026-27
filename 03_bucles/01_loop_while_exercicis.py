@@ -126,3 +126,18 @@ while comptador < termes:
 # Demana a l'usuari que provi d'endevinar-lo i continua demanant números amb un bucle while
 # fins que l'encerti.
 # Després de cada intent incorrecte, indica si el número secret és més gran o més petit.
+
+secret = 7  
+
+valor=int(input("Intenta trobar el valor secret: "))
+while valor != secret:
+    
+    if valor > secret:
+        print("El secret es mes petit")
+    else:
+        print("T'has passat")
+    valor=int(input("No has encertat: "))
+
+print("Molt bé, era el numero 7")
+
+          

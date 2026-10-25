@@ -47,7 +47,7 @@ print(llista3)
 # Compta quantes vegades apareix el nombre 2 a la llista fent servir count().
 # Comprova si el nombre 7 és a la llista fent servir in.
 llista4=[5, 2, 8, 1, 9, 4, 2]
-llista4.sort
+llista4.sort()
 comptador=llista.count(2)
 esta=7 in llista4
 print(llista4)
