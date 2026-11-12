@@ -20,8 +20,8 @@ for i in range (1, 50):
 
 # Exercici 4: Imprimir números en ordre invers
 # Imprimeix els números del 10 a l'1 (inclosos) en ordre invers fent servir un bucle for i range().
-for i in range (10,0,-1)
-print(i)
+for i in range (10,0,-1):
+    print(i)
 # Exercici 5: Suma de números en un rang
 # Calcula la suma dels números de l'1 al 100 (inclosos) fent servir un bucle for i range().
 suma=0
