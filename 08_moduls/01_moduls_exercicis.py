@@ -12,6 +12,12 @@
 x = 3.0
 y = 4.0
 # TODO: escriu les importacions i els càlculs.
+import math as matematiques
+
+x=5.0
+y=2.6
+modul=matematiques.sqrt(x*x+y*y)
+print(f"El modul es: {modul}")
 
 # Exercici 2 - Bàsic. Conversions reutilitzables
 # Importa conversions amb l'àlies conv i utilitza les seves funcions.
@@ -23,6 +29,16 @@ temperatures = [-10.0, 0.0, 25.0]
 tensions_mv = [0, 3300, 5000]
 # TODO: obtén i mostra dues llistes amb les conversions.
 
+import conversions as conv
+kelvins=[]
+volts=[]
+for i in range(len(temperatures)): #range nomes llegeix valors enters
+    kelvins.append(conv.celsius_a_kelvin(temperatures[i])) #anem afegint amb append (ultim element de la llista)
+for i in range(len(tensions_mv)):
+    volts.append(conv.milivolts_a_volts(tensions_mv[i]))
+print(f"Llista de kelvins: {kelvins}")
+print(f"Tensions en V: {volts}")
+
 # Exercici 3 - Intermedi. Resum d'una xarxa de sensors
 # Importa únicament mitjana del mòdul sensors.
 # Crea un diccionari de mitjanes amb els mateixos identificadors que dades.
@@ -30,6 +46,11 @@ tensions_mv = [0, 3300, 5000]
 # El mòdul sensors ja defineix el tractament de la llista buida.
 dades = {"T1": [20.0, 22.0], "T2": [18.0], "T3": []}
 # TODO: reutilitza la funció importada per a cada sensor.
+
+from sensors import mitjana
+diccionari_mitjanes={}
+for identificador
+
 
 # Exercici 4 - Repte opcional. Un programa reutilitzable
 # Defineix informe_sensor(nom, lectures) que retorni un diccionari amb
