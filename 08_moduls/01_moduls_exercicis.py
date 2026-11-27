@@ -50,7 +50,9 @@ dades = {"T1": [20.0, 22.0], "T2": [18.0], "T3": []}
 from sensors import mitjana
 diccionari_mitjanes={}
 for identificador in dades:
-    diccionari_mitjanes[identificador]=mitjana(dades[identificador])
+    diccionari_mitjanes[identificador]=mitjana(dades[identificador]) #Busca en el diccionario original el valor correspondiente a esa clave.
+                                                                     #en la primera vuelta devielve: [20.0,22.0] y hace la mitjana
+                                                                     #luego lo guarda: diccionari_mitjanes["T1"] = 21.0
 
 
 
@@ -66,3 +68,29 @@ for identificador in dades:
 # En importar el fitxer no s'ha de mostrar cap sortida.
 # TODO: reorganitza les demostracions dels exercicis 1–3 dins de main().
 
+from sensors import mitjana
+
+def informe_sensor(nom,lectures):
+    diccionari_conjunt={
+        "nom":nom,
+        "nombre": len(lectures),
+        "mitjana":mitjana(lectures)
+    }
+    return diccionari_conjunt
+
+def main(): #creamos una funcion que se llama main que contendra todas las pruebas de cada ejercicio (programa principal)
+            #fuera de este estaran las funciones declaradas que iremos llamando en nuestro programa principal
+    #exercici 1
+    print(f"El modul es: {modul}")
+
+    #exercici 2
+    print(f"Llista de kelvins: {kelvins}")
+    print(f"Tensions en V: {volts}")
+
+    #exercici 3
+    #exercici 4
+    print(informe_sensor("T1", [20.0, 22.0])) #li pasem a la funcio en format: nom, llista de lectures
+    print(informe_sensor("T0", []))
+    # 4. Ejecutamos el programa
+if __name__ == "__main__": #Si estoy ejecutando este archivo directamente, ejecuta la función principal. 
+    main()                 #Si otro archivo lo importa, no ejecutes las demostraciones automáticamente.
