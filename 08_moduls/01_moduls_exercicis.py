@@ -49,7 +49,9 @@ dades = {"T1": [20.0, 22.0], "T2": [18.0], "T3": []}
 
 from sensors import mitjana
 diccionari_mitjanes={}
-for identificador
+for identificador in dades:
+    diccionari_mitjanes[identificador]=mitjana(dades[identificador])
+
 
 
 # Exercici 4 - Repte opcional. Un programa reutilitzable
@@ -63,3 +65,4 @@ for identificador
 # Protegeix TOTES les demostracions del fitxer amb __name__ == '__main__'.
 # En importar el fitxer no s'ha de mostrar cap sortida.
 # TODO: reorganitza les demostracions dels exercicis 1–3 dins de main().
+
